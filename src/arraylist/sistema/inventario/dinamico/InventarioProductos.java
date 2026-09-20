@@ -49,7 +49,7 @@ public class InventarioProductos {
                     agregaProducto();
                     break;
                 case 4:
-                    System.out.println("Eliminando producto......");
+                    eliminarproducto();
                     break;
 
             }
@@ -99,6 +99,15 @@ public class InventarioProductos {
     }
 
     public static void eliminarproducto() {
+        System.out.println("Qué producto desea eliminar:");
+        
+        for(int i=0; i <ListaProductos.size(); i++){
+           
+            System.out.println(i+"->"+ ListaProductos.get(i));    
+        }
+        System.out.println("Elija el producto que desea eliminar: ");
+        int opcionEliminar = sc.nextInt();
+        ListaProductos.remove(opcionEliminar);
 
     }
 

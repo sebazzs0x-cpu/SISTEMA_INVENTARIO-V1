@@ -28,7 +28,7 @@ public class InventarioProductos {
         }
         do {
 
-            System.out.println("Que desea hacer?");
+            System.out.println("¿Que desea hacer?");
             System.out.println("1. ver todos los productos ");
             System.out.println("2. Agreagar producto ");
             System.out.println("3. Editar producto");
